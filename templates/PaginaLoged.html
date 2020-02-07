@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <style>
+    body{
+    background-image: url("https://images.pexels.com/photos/1370725/pexels-photo-1370725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+
+    }
+    input{
+    border-radius: 2px; border-width: 0.3px; width:300px; height: 40px
+    }
+</style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4">
+
+      <div style="padding-top:100px">
+            <center>
+                <h3 style="color: #FFFFFF ">Bem-Vindo(a), {{select}}</h3>
+                <label style="color: #FFFFFF ">Seu plano é: {{plano}}</label>
+                <br>
+                <h5 style="color: #FFFFFF ">Alterar Senha:</h5>
+                <br>
+    </center>
+      </div>
+             <form action="/AlteraSenha" method="post, get">
+             <center>
+        <div class="form-group" style="width: 300px;">
+          <label style="color: #FFFFFF">Antiga Senha:</label>
+            <br>
+            <br>
+           <input type="text", id="antigaSenha", name="antigaSenha" style="background-color: white; border-radius: 5px;">
+        </div>
+
+     <div class="form-group" style="width: 300px;">
+          <label style="color: #FFFFFF ">Nova Senha:</label>
+            <br>
+           <input type="text", id="novaSenha", name="novaSenha" style="background-color: white; border-radius: 5px;">
+        </div>
+                 <button type="submit" class="btn btn-primary">Alterar Senha</button>
+                 </center>
+
+             </form>
+            <br>
+<center>
+<h5 style="color: #FFFFFF ">Para deletar conta, confirme seu email</h5>
+    </center>
+            <form action="/DeletaConta" method="post, get">
+             <center>
+        <div class="form-group" style="width: 300px;">
+          <label style="color: #FFFFFF ">Email:</label>
+            <br>
+           <input type="text", id="emailDel", name="emailDel" style="background-color: white; border-radius: 5px;">
+        </div>
+                 <button type="submit" class="btn btn-primary">Deletar</button>
+                 </center>
+
+             </form>
+
+
+        </div>
+        <div class="col-lg-8">
+             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/0e224767772663.5b45b9b99ec0d.jpg" height="693
+             px" width="896px">
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

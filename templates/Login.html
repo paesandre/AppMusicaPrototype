@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<style>
+    body{
+    background-image: url("https://images.pexels.com/photos/1370725/pexels-photo-1370725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+
+    }
+    input{
+    border-radius: 2px; border-width: 0.3px; width:300px; height: 40px
+    }
+</style>
+<body>
+<div class="input-group mb-3" style="padding-left: 15px; padding-top: 10px">
+<input type="text" placeholder="   Pesquisar Música"; style="opacity: .3">
+<div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="opacity: .3; color: white">Buscar</button>
+  </div>
+    <div style="padding-left: 880px">
+    <button style="opacity: .2; color: white; font-color: white; width:80px; border-radius: 5px">Entrar</button>
+        </div>
+     </div>
+<div style="padding-top: 80px;">
+<center>
+ <div class="card-body" style="background: rgba(255, 255, 255, 0.5); width: 400px; border-radius: 2px;">
+    <h1 style="font-family:'Staatliches', cursive; color: #4E49EA ">Cadastro AppMusic</h1>
+
+
+ <form  action="/Loged" method="post, get">
+           <input placeholder=" Nome" type="text", id="nome", name="nome" >
+     <br>
+           <input placeholder=" Email" type="text", id="email", name="email">
+     <br>
+           <input placeholder=" Telefone" type="text", id="telefone", name="telefone">
+     <br>
+           <input placeholder=" Senha" type="text", id="senha", name="senha">
+     <br>
+          <input placeholder=" Cartão*" type="text", id="cartao", name="cartao">
+     <br>
+     <label style="font-size:10px">*Preencha os dados do cartão se quiser ser premium</label>
+     <br>
+        <button style="width:300px; border-radius:1px; background-color:#4E49EA; border-color: #4E49EA  " type="submit" class="btn btn-primary">Cadastrar</button>
+
+
+ </form>
+</div>
+</center>
+
+<label style="padding-top: 130px; padding-left: 20px; color: white; opacity: .6">Termos de Serviço</label>
+<label style="padding-left: 20px; color: white; opacity: .6">Privacidade</label>
+<label style="padding-left: 20px; color: white; opacity: .6">Empregos</label>
+<label style="padding-left: 20px; color: white; opacity: .6">Equipe Técnica</label>
+    </div>
+</body>
+</html>
